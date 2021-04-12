@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DeleteBookmarkModalComponent } from './delete-bookmark-modal.component';
 
@@ -8,7 +10,16 @@ describe('DeleteBookmarkModalComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DeleteBookmarkModalComponent ]
+      declarations: [
+        DeleteBookmarkModalComponent,
+      ],
+      imports: [
+        MatDialogModule,
+        NoopAnimationsModule,
+      ],
+      providers: [
+        { provide: MatDialogRef, useValue: {} },
+      ],
     })
     .compileComponents();
   });

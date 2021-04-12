@@ -2,6 +2,6 @@ import * as BookmarkActions from './bookmarks.actions';
 
 describe('Bookmark', () => {
   it('should create an instance', () => {
-    expect(new BookmarkActions.LoadBookmarks()).toBeTruthy();
+    expect(BookmarkActions.addBookmark({ bookmark: {} })).toBeTruthy();
   });
 });
