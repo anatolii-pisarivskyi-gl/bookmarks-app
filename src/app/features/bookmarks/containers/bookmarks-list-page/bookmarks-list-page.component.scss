@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+
+  ._bookmark-card {
+    margin-bottom: 20px;
+  }
+
+  ._floating-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  ._preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+  }
+
+  ::ng-deep {
+    @media screen and (max-width: 450px) {
+      ._bookmark-card .mat-card {
+        display: block !important;
+      }
+
+      ._bookmark-card ._actions {
+        margin-top: 20px !important;
+      }
+    }
+  }
+}

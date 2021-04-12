@@ -1,0 +1,21 @@
+<ng-container *ngIf="!(isPending$ | async); else preloader">
+  <ng-container *ngFor="let groupWithData of data$ | async | keyvalue">
+    <h2>{{ groupWithData.key | titlecase }}</h2>
+    <app-bookmark-card
+      class="_bookmark-card"
+      *ngFor="let bookmark of groupWithData.value; trackBy: trackBy"
+      [bookmark]="bookmark"
+      (delete)="onBookmarkDelete($event)">
+    </app-bookmark-card>
+  </ng-container>
+</ng-container>
+
+<ng-template #preloader>
+  <div class="_preloader">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
+
+<button class="_floating-button" mat-fab color="primary" (click)="onAddBookmark()">
+  <mat-icon>add</mat-icon>
+</button>
