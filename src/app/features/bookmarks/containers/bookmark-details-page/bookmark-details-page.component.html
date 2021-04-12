@@ -1,0 +1,18 @@
+<ng-container *ngIf="!(isPending$ | async); else preloader">
+  <p>Name: {{ (bookmark$ | async)?.name }}</p>
+  <p>Group: {{ (bookmark$ | async)?.group }}</p>
+  <p>
+      Url:
+      <a class="_link" [attr.href]="(bookmark$ | async)?.url" target="_blank">
+        <span>{{ (bookmark$ | async)?.url }}</span>
+        <mat-icon size="12">open_in_new</mat-icon>
+      </a>
+  </p>
+  <button type="button" mat-raised-button color="warn" (click)="onDelete()">Delete</button>
+</ng-container>
+
+<ng-template #preloader>
+  <div class="_preloader">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>

@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-grow: 1;
+
+  ._link {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+
+    ::ng-deep {
+      .mat-icon {
+        margin-left: 5px;
+        text-decoration: none;
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  ._preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+  }
+}
