@@ -1,0 +1,57 @@
+:host {
+  display: block;
+
+  ._card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ._subtitle {
+    margin-bottom: 0;
+  }
+
+  ._link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    ::ng-deep {
+      .mat-icon {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  ._actions:last-child {
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  ._delete-btn {
+    margin-right: 0;
+  }
+
+  ::ng-deep {
+    .mat-card {
+      padding: 10px;
+    }
+
+    .mat-card-avatar {
+      border-radius: 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    .mat-card-header-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mat-card-header .mat-card-title {
+      margin-bottom: 0;
+    }
+  }
+}

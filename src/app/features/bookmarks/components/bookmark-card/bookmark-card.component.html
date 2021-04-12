@@ -1,0 +1,15 @@
+<mat-card class="_card">
+  <mat-card-header>
+    <img [attr.src]="'https://www.google.com/s2/favicons?sz=32&domain_url=' + bookmark.url" mat-card-avatar>
+    <mat-card-title>
+      <a class="_link" target="_blank" [attr.href]="bookmark.url">
+        {{ bookmark.name }}
+        <mat-icon>open_in_new</mat-icon>
+      </a>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-actions class="_actions">
+      <a [routerLink]="['/bookmarks', bookmark.id]" mat-raised-button color="primary">View</a>
+      <button class="_delete-btn" type="button" mat-raised-button color="warn" (click)="onDelete()">Delete</button>
+  </mat-card-actions>
+</mat-card>
