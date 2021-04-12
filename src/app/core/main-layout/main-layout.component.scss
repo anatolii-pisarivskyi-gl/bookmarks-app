@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  ._toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  ._toolbar-content {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+  }
+
+  ._container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ._content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  ._link {
+    color: #fff;
+    text-decoration: none;
+  }
+}
