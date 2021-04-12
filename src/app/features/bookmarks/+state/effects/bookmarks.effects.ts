@@ -71,7 +71,7 @@ export class BookmarksListEffects {
       let message = 'Error! Please, try again later.';
 
       if (error?.message) {
-        message += `Details: ${error?.message}`;
+        message += ` Details: ${error?.message}`;
       }
 
       this.snackBar.open(message, 'Ok', {
