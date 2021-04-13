@@ -1,5 +1,7 @@
 # BookmarksApp
 
+A test application for saving bookmarks.
+
 ## How to run
 
 Execute the following command in the console to start fake rest api server:
@@ -11,6 +13,14 @@ In the separate console run this command to start an application:
     $ ng serve
 
 Open the following url in your browser: http://localhost:4200
+
+## Test coverage
+
+Covered:
+
+  - [bookmark-card.component.ts](src/app/features/components/bookmark-card/bookmark-card.component.ts)
+  - [bookmarks.service.ts](src/app/features/services/bookmarks/bookmarks.service.ts)
+  - [add-bookmark-modal.component](src/app/features/services/add-bookmark-modal/add-bookmark-modal.component)
 
 ## Screenshots
 
