@@ -30,12 +30,14 @@
 
 <div mat-dialog-actions>
   <button
+    class="_add-btn"
     mat-button
     cdkFocusInitial
     [disabled]="form.invalid || (isPending$ | async)"
     (click)="onSubmit()">Add</button>
 
   <button
+    class="_cancel-btn"
     mat-button
     [disabled]="isPending$ | async"
     (click)="onCancel()">Cancel</button>
