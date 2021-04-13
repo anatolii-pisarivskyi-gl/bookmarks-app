@@ -18,9 +18,9 @@ Open the following url in your browser: http://localhost:4200
 
 Covered:
 
-  - [bookmark-card.component.ts](src/app/features/components/bookmark-card/bookmark-card.component.ts)
-  - [bookmarks.service.ts](src/app/features/services/bookmarks/bookmarks.service.ts)
-  - [add-bookmark-modal.component](src/app/features/services/add-bookmark-modal/add-bookmark-modal.component)
+  - [bookmark-card.component.ts](src/app/features/bookmarks/components/bookmark-card/bookmark-card.component.ts)
+  - [bookmarks.service.ts](src/app/features/bookmarks/services/bookmarks/bookmarks.service.ts)
+  - [add-bookmark-modal.component](src/app/features/bookmarks/services/add-bookmark-modal/add-bookmark-modal.component)
 
 ## Screenshots
 
