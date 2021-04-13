@@ -57,9 +57,9 @@ describe('BookmarkCardComponent', () => {
   it('should emit delete event', () => {
     const element = fixture.nativeElement;
     const btn: HTMLButtonElement = element.querySelector('._delete-btn');
-    btn.dispatchEvent(new Event('click'));
-
     spyOn(component, 'onDelete').and.callThrough();
+
+    btn.dispatchEvent(new Event('click'));
 
     expect(component.onDelete).toHaveBeenCalledOnceWith(bookmark.id);
   });
