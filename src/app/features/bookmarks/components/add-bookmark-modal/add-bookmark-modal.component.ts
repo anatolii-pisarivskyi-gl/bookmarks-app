@@ -32,7 +32,6 @@ export class AddBookmarkModalComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.data);
     this.form = new FormGroup({
       name: new FormControl('', [
         Validators.required,
